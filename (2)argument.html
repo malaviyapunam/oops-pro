@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    
+</body>
+<script>
+// (2)Create a Person class with an argument name and age, create an Employee class through print out details of Person Class.
+class Person 
+{
+  constructor(name, age) 
+  {
+    this.name = name;
+    this.age = age;
+  }
+  printDetails() 
+  {
+    console.log(`Name: ${this.name}`);
+    console.log(`Age: ${this.age}`);
+  }
+}
+
+class Employee extends Person 
+{
+  constructor(name, age, position) 
+  {
+
+    // Call the constructor of the Person class
+    super(name, age);
+    this.position = position;
+  }
+
+  printEmployeeDetails() 
+  {
+    console.log("Employee Details:");
+    this.printDetails();
+    console.log(`Position: ${this.position}`);
+  }
+}
+const employee = new Employee("grisha singala", 20, "web devloper");
+employee.printEmployeeDetails();
+
+</script>
+</html>

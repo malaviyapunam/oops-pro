@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    
+</body>
+<script>
+//(4) Create a shape class and create a rectangle and circle method find circle areal(3.14*r*r) and rectangle area (width & height) using with argument.
+class Shape 
+{
+  static circleArea(r) 
+  {
+    return 3.14 * r * r;
+  }
+
+  static rectangleArea(width, height) 
+  {
+    return width * height;
+  }
+}
+const circleArea = Shape.circleArea(10);
+console.log(`Circle Area: ${circleArea}`);
+
+const rectangleArea = Shape.rectangleArea(20, 10);
+console.log(`Rectangle Area: ${rectangleArea}`);
+
+</script>
+</html>
